@@ -1,0 +1,103 @@
+body {
+    /* Цвет фона */
+    background-color: #2C3B45;
+}
+
+a {
+    /* Наследовать у родителя */
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    /* Внешний отступ */
+    margin: 0px;
+    /* Внутренний отступ */
+    padding: 0px;
+}
+
+/*Убрать маркеры, если Li находится  UL */
+ul>li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
+.container {
+    width: 1260px;
+    margin: 0% auto;
+}
+
+.logo {
+    /* Убрать подчеркивание у текста */
+    text-decoration: none;
+}
+
+.logo__img {
+    /* Ширина */
+    width: 30px;
+    /* Высота */
+    height: 30px;
+    margin-right: 8px;
+}
+
+.logo__title {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #FFF;
+
+}
+
+.nav {}
+
+.nav_item {}
+
+.nav__link {
+    /* Передает плавность  */
+    transition: color 0.3s;
+}
+
+.nav__list {
+    color: #FFF;
+    font-size: 16px;
+
+}
+
+/* При наведении меняет цвет */
+.nav__link:hover {
+    color: rgba(255, 255, 255, 0.40);
+
+}
+
+.header .nav__list {
+    background-color: #404f59;
+    /* Скругление углов */
+    border-radius: 0px 0px 10px 10px;
+    /* Спрятать все что выходит за пределы углов */
+    overflow: hidden;
+    padding: 20px 40px 20px 40px;
+
+}
+
+.phone_icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.phone__link {
+    color: rgba(255, 255, 255, 0.40);
+    font-size: 16px;
+}
+
+.phone__link span {
+    color: #FFF;
+    ;
+}
