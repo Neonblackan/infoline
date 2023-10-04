@@ -117,3 +117,50 @@ h6 {
     color: #FFF;
     ;
 }
+
+.adres__icon {
+    height: 25px;
+    width: 25px;
+}
+
+span {
+    color: #1E92E7;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    line-height: 120%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero__title {
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    text-transform: uppercase
+}
+
+.btn {
+    border-radius: 5px;
+    background-color: #1E92E7;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.hero__btn {
+    width: 244px;
+    height: 50px;
+}
+
+.hero__img {
+    width: 420px;
+    height: 550px;
+}
