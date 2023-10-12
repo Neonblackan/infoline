@@ -1,30 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
-    /* Цвет фона */
-    background-color: #2C3B45;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+  height: 100%;
+}
 
-
+body {
+  /* Цвет фона */
+  background-color: #3d3939;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
 
 a {
-    /* Наследовать у родителя */
-    color: inherit;
-    text-decoration: none;
+  /* Наследовать цвет текста у родителя */
+  color: inherit;
+  text-decoration: none;
+}
 
-
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 ul {
-    /* Внешний отступ */
-    margin: 0px;
-    /* Внутренний отступ */
-    padding: 0px;
+  /* Внешний отступ */
+  margin: 0;
+  /* Внутренний отступ */
+  padding: 0;
 }
 
-/*Убрать маркеры, если Li находится  UL */
 ul>li {
-    list-style: none;
+  /* Убрать маркеры у маркированного списка */
+  list-style: none;
 }
 
 h1,
@@ -33,134 +44,232 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0px;
+  margin: 0;
+}
+
+.wrapper {
+  height: 100%;
 }
 
 .container {
-    width: 1260px;
-    margin: 0% auto;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0px 40px;
+}
+
+/* header */
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  padding-top: 29px;
+}
+
+.menu {
+  display: flex;
+  /* расстояние между колонками флексконтейнеров */
+  justify-content: space-between;
+  column-gap: 10px;
+  align-items: flex-start;
+
 }
 
 .logo {
-    /* Убрать подчеркивание у текста */
-    text-decoration: none;
+  /* Убрать подчеркивание у текста */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
 }
 
 .logo__img {
-    /* Ширина */
-    width: 30px;
-    /* Высота */
-    height: 30px;
-    margin-right: 8px;
-
+  /* Ширина */
+  width: 30px;
+  /* Высота */
+  height: 30px;
+  margin-right: 8px;
 }
 
 .logo__title {
-
-    color: #FFF;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-    text-transform: uppercase;
-
-
+  /* Все буквы в верхнем регистре */
+  text-transform: uppercase;
+  font-size: 16px;
+  /* Цвет текста */
+  color: #fff;
+  color: white;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 120%;
+  word-wrap: break-word;
 }
 
-
-.nav__link {
-    /* Передает плавность  */
-    transition: color 0.3s;
-}
+.nav {}
 
 .nav__list {
-    color: #FFF;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
+  display: flex;
+  column-gap: 30px;
+  color: #fff;
+  font-size: 16px;
+  font-family: Open Sans;
 
-}
-
-/* При наведении меняет цвет */
-.nav__link:hover {
-    color: rgba(255, 255, 255, 0.40);
-
+  line-height: 140%;
 }
 
 .header .nav__list {
-    background-color: #404f59;
-    /* Скругление углов */
-    border-radius: 0px 0px 10px 10px;
-    /* Спрятать все что выходит за пределы углов */
-    overflow: hidden;
-    padding: 20px 40px 20px 40px;
+  background-color: #404f59;
+  /* Скругление углов */
+  border-radius: 0px 0px 10px 10px;
+  /* Спрятать всё выходит за пределы углов */
+  overflow: hidden;
+  padding: 20px 40px 20px 40px;
+  margin-top: -29px;
+}
+
+.nav__link {
+  transition: color 0.3s;
+  font-weight: 700;
 
 }
 
-.phone_icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
+.nav__link:hover {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.nav__item {}
+
+.phone {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.phone__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
 }
 
 .phone__link {
-    color: rgba(255, 255, 255, 0.40);
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-
+  color: rgba(255, 255, 255, 0.4);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
 }
 
 .phone__link span {
-    color: #FFF;
-    ;
+  color: #fff;
 }
 
-.adres__icon {
-    height: 25px;
-    width: 25px;
+/* HERO */
+.hero {
+  border-bottom: 50px solid #1e92e7;
+  background-color: #2c3b45;
+  padding-top: 133px;
+  /* декоративное изображение */
+  background-image: url(../img/hero/decor.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-span {
-    color: #1E92E7;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    line-height: 120%;
-    font-weight: 700;
-    text-transform: uppercase;
+.hero__container {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.hero__contant {
+  width: 602px;
+  padding-top: 92px;
+  padding-right: 20px;
+}
+
+.address {
+  font-style: normal;
+  margin-bottom: 35px;
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #1E92E7;
+}
+
+
+.address__icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.title {
+  font-family: Montserrat;
+  font-size: 56px;
+
+  font-weight: 500;
+  line-height: 120%;
+  /* 67.2px */
+  text-transform: uppercase;
+  color: #FFF;
+
 }
 
 .hero__title {
-    color: #FFF;
-    font-family: 'Montserrat';
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
-    text-transform: uppercase
+  margin-bottom: 48px;
 }
 
+.hero__btns {}
+
+/* BUTTONS */
+
 .btn {
-    border-radius: 5px;
-    background-color: #1E92E7;
-    color: #FFF;
-    text-align: center;
-    font-family: 'Open Sans';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-    text-transform: uppercase;
+  border-radius: 5px;
+
+  color: #FFF;
+  text-align: center;
+
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+
+  text-transform: uppercase;
+}
+
+.btn_theme_blue {
+  background-color: #1E92E7;
+  color: #FFF;
+}
+
+.btn_theme_tranceparent {
+  background-color: transparent;
+  border: 1px solid #1E92E7;
+  color: #FFF;
+}
+
+.btn_size_big {
+  padding: 14px 20px;
+}
+
+.btn_size_small {
+  padding: 9px 20px;
 }
 
 .hero__btn {
-    width: 244px;
-    height: 50px;
+  min-width: 244px;
 }
 
-.hero__img {
-    width: 420px;
-    height: 550px;
+.hero__img-wrap {
+  position: relative;
+  border-radius: 5px 0px 0px 0px;
+  background-color: antiquewhite;
 }
+
+.hero__img {}
