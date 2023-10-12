@@ -7,9 +7,12 @@ body {
   height: 100%;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
   /* Цвет фона */
-  background-color: #3d3939;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
 }
@@ -49,6 +52,7 @@ h6 {
 
 .wrapper {
   height: 100%;
+  overflow: hidden;
 }
 
 .container {
@@ -174,6 +178,9 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  z-index: 1;
+  position: relative;
+
 }
 
 .hero__container {
@@ -183,9 +190,12 @@ h6 {
 }
 
 .hero__contant {
-  width: 602px;
-  padding-top: 92px;
+  width: 51%;
+  padding-top: 7.8%;
   padding-right: 20px;
+  /* 199px/1180px ширина родителя */
+  margin-bottom: 16.9%;
+
 }
 
 .address {
@@ -222,7 +232,7 @@ h6 {
 }
 
 .hero__title {
-  margin-bottom: 48px;
+  margin-bottom: 7.7%;
 }
 
 .hero__btns {}
@@ -231,11 +241,9 @@ h6 {
 
 .btn {
   border-radius: 5px;
-
   color: #FFF;
   text-align: center;
-
-  font-family: Open Sans;
+  font-family: 'Open Sans';
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -251,7 +259,7 @@ h6 {
 .btn_theme_tranceparent {
   background-color: transparent;
   border: 1px solid #1E92E7;
-  color: #FFF;
+  color: black;
 }
 
 .btn_size_big {
@@ -267,9 +275,49 @@ h6 {
 }
 
 .hero__img-wrap {
+  display: flex;
   position: relative;
   border-radius: 5px 0px 0px 0px;
-  background-color: antiquewhite;
+  flex-grow: 1
 }
 
-.hero__img {}
+.hero__img-wrap::before {
+  content: "";
+  display: block;
+  background: url(../img/hero/sky.jpg) center/cover no-repeat;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+
+}
+
+.hero__img-wrap::after {
+  content: "";
+  display: block;
+  background-color: #404f59;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  z-index: -2;
+  top: -15px;
+  left: 30px;
+  border-radius: inherit;
+
+}
+
+.hero__img {
+  height: 95%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  object-fit: contain;
+  object-position: center bottom;
+
+
+
+}
