@@ -1,0 +1,23 @@
+@media (max-width: 1180px) {
+
+    .title {
+        font-size: 4.75vw;
+    }
+}
+
+@media (max-width: 860px) {
+    .header {
+        border-radius: 0px 0px 10px 10px;
+        background: #404F59;
+        padding: 15px 0;
+    }
+
+
+    .header__nav-list {
+        display: none;
+    }
+
+    .header__phone {
+        display: none;
+    }
+}

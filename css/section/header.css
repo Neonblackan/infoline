@@ -1,0 +1,106 @@
+/* header */
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    padding-top: 29px;
+}
+
+.menu {
+    display: flex;
+    /* расстояние между колонками флексконтейнеров */
+    justify-content: space-between;
+    column-gap: 10px;
+    align-items: flex-start;
+
+}
+
+.logo {
+    /* Убрать подчеркивание у текста */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo__img {
+    /* Ширина */
+    width: 30px;
+    /* Высота */
+    height: 30px;
+    margin-right: 8px;
+}
+
+.logo__title {
+    /* Все буквы в верхнем регистре */
+    text-transform: uppercase;
+    font-size: 16px;
+    /* Цвет текста */
+    color: #fff;
+    color: white;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 120%;
+    word-wrap: break-word;
+}
+
+.nav {}
+
+.nav__list {
+    display: flex;
+    column-gap: 30px;
+    color: #fff;
+    font-size: 16px;
+    font-family: Open Sans;
+
+    line-height: 140%;
+}
+
+.header .nav__list {
+    background-color: #404f59;
+    /* Скругление углов */
+    border-radius: 0px 0px 10px 10px;
+    /* Спрятать всё выходит за пределы углов */
+    overflow: hidden;
+    padding: 20px 40px 20px 40px;
+    margin-top: -29px;
+}
+
+.nav__link {
+    transition: color 0.3s;
+    font-weight: 700;
+
+}
+
+.nav__link:hover {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.nav__item {}
+
+.phone {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.phone__icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.phone__link {
+    color: rgba(255, 255, 255, 0.4);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.phone__link span {
+    color: #fff;
+}

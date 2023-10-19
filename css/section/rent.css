@@ -1,0 +1,103 @@
+/* Аренда */
+.rent {
+    padding: 120px 0 100px;
+  }
+  
+  .container {}
+  
+  .section-titel {
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: uppercase;
+  }
+  
+  .rent__titel {
+    margin-bottom: 15px;
+  }
+  
+  .rent__btns {
+    margin-bottom: 50px;
+  }
+  
+  .rent__btn-list {
+    display: flex;
+    column-gap: 10px;
+  
+  
+  }
+  
+  .rent__btns-item {}
+  
+  .offers_slider {}
+  
+  .offers-slider__container {
+    position: relative;
+  }
+
+  .offers__control-prev {}
+
+.control_type_triangle {}
+
+.offers__list {
+  display: flex;
+  column-gap: 20px;
+}
+
+.offer {
+  width: 380px;
+  flex-shrink: 0;
+}
+
+.offer__content {
+  border-radius: 5px;
+  background: #FFF;
+
+  /* Тень */
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.20);
+  overflow: hidden;
+
+
+}
+
+.offer__img {
+  height: 222px;
+}
+
+.offer__img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.offer__info {
+  padding: 33px 40px 40px;
+}
+
+.offer__info-list {
+  margin-bottom: 29px;
+}
+
+.offer__info-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.offer__info-item:last-child {
+  margin-bottom: 0px;
+}
+
+.offer__info-desk {}
+
+.offer__info-value {}
+
+.offer__info-value-true {}
+
+.btn_theme_blue {}
+
+.btn_size_big {}
+
+.offer__btn {}
