@@ -104,3 +104,37 @@
 .phone__link span {
     color: #fff;
 }
+
+.burger {
+    display: none;
+    width: 26px;
+    height: 20px;
+    z-index: 10;
+    position: relative;
+    transition: all 0.4s;
+}
+
+.burger__el {
+    display: block;
+    background-color: #fff;
+    border-radius: 1px;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+
+}
+
+.burger__el:nth-child(1) {
+    top: 0;
+}
+
+.burger__el:nth-child(2) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.burger__el:nth-child(3) {
+
+    bottom: 0;
+}

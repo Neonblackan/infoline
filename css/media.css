@@ -20,4 +20,49 @@
     .header__phone {
         display: none;
     }
+
+    .burger {
+        display: block;
+    }
+
+    .rent {
+        padding-top: 90px;
+        padding-bottom: 70px;
+    }
+
+    .rent__btns-list {
+        display: none;
+    }
+
+}
+
+@media (max-width:760px) {
+    :root {
+        --container-width: 93.1%
+    }
+
+    .container {
+        padding-right: 0;
+        padding-left: 0;
+        width: var(--container-width);
+    }
+
+    .hero {
+        padding-top: 90px;
+        border-bottom-width: 30px;
+    }
+
+    .hero__contant {
+        width: 56.3%;
+        padding-top: 47px;
+    }
+
+    .title {
+        font-size: 31px;
+    }
+
+    .hero_img {
+        left: 0;
+        transform: translateX(30px);
+    }
 }
