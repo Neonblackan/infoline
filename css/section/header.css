@@ -13,6 +13,70 @@
     column-gap: 10px;
     align-items: flex-start;
 
+
+}
+
+.header__menu-mobile {
+    background-color: #1e92e7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    padding: 15px 15px 15px 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.header__menu-mobile .nav {
+    flex: 1;
+    align-self: center;
+    margin-top: 100px;
+}
+
+
+.header__menu-mobile .nav__list {
+    display: flex;
+    padding: 0;
+    background: none;
+    flex-direction: column;
+    row-gap: 30px;
+
+
+
+}
+
+/* Спрятать белую картинки если не мобильник */
+.menu:not(.header__menu-mobile) .logo__img_white {
+    display: none;
+}
+
+.header__menu-mobile .logo__img_blue {
+    display: none;
+}
+
+.header__menu-mobile .logo {
+    opacity: 0.2;
+}
+
+.header__menu_mobile-phone {
+    display: none;
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+
+}
+
+.header__menu-mobile .header__menu_mobile-phone {
+    display: block;
+    width: 100%;
 }
 
 .logo {
@@ -20,6 +84,7 @@
     text-decoration: none;
     display: flex;
     align-items: center;
+
 
 }
 
@@ -58,7 +123,7 @@
     line-height: 140%;
 }
 
-.header .nav__list {
+.header__nav-list {
     background-color: #404f59;
     /* Скругление углов */
     border-radius: 0px 0px 10px 10px;
@@ -112,6 +177,7 @@
     z-index: 10;
     position: relative;
     transition: all 0.4s;
+
 }
 
 .burger__el {
@@ -121,6 +187,7 @@
     height: 2px;
     width: 100%;
     position: absolute;
+    transition: all 0.4s;
 
 }
 
@@ -137,4 +204,27 @@
 .burger__el:nth-child(3) {
 
     bottom: 0;
+}
+
+.header__menu-mobile .burger {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+
+}
+
+.header__menu-mobile .burger__el:nth-child(2) {
+    display: none;
+}
+
+.header__menu-mobile .burger__el:nth-child(1) {
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+}
+
+.header__menu-mobile .burger__el:nth-child(3) {
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) rotate(+45deg);
 }

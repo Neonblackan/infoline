@@ -66,3 +66,57 @@
         transform: translateX(30px);
     }
 }
+
+@media (max-width:480px) {
+    :root {
+        --container-widht: 91.46%
+    }
+
+    .hero {
+        padding-top: 115px;
+
+    }
+
+    .hero__container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .hero__contant {
+        text-align: center;
+        width: 100%;
+        padding-top: 0;
+
+    }
+
+    .address {
+        justify-content: center;
+    }
+
+    .hero__img-wrap {
+        height: 324px;
+        width: 100vw;
+        border-radius: 0;
+        margin-left: calc(-1*(100vw - 100%)/2);
+
+    }
+
+    .hero__img-wrap::after {
+        display: none;
+    }
+
+    .hero__img {
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .hero__img-wrap::before {
+        top: auto;
+        height: 85%;
+        bottom: 0;
+
+
+    }
+}

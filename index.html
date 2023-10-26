@@ -21,7 +21,10 @@
             <div class="container header__container">
                 <div class="menu">
                     <a href="index.html" class="logo">
-                        <img class="logo__img" src="img/icons/logo-icon.svg">
+                        <!-- логотип -->
+                        <img class="logo__img logo__img_blue" src="img/icons/logo-icon.svg">
+                        <!-- Логотип в полноэкранном меню -->
+                        <img class="logo__img logo__img_white" src="img/icons/logo-icon-white.svg" alt="">
                         <span class="logo__title">инфолайн</span>
                     </a>
                     <nav class="nav">
@@ -45,6 +48,8 @@
                         <img src="img/icons/tel.svg" alt="Телефон" class="phone__icon">
                         <a class="phone__link" href="tel:+7345238800">8 (3452) <span>383-000</span></a>
                     </div>
+                    <!-- телефон в полноэкранном меню -->
+                    <a class="header__menu_mobile-phone" href="tel: +73452383000">8 (3452) 383-000 </a>
                     <!-- <Бургер меню> -->
                     <div class="burger" id="burger">
                         <span class="burger__el"></span>
@@ -104,17 +109,16 @@
                         </li>
                     </ul>
                     <!-- end Список кнопок -->
-                    <div class="rent__select-wrap">
-                        <select name="plaza" id="plaza" class="rent__select">
-                            <option value="" disabled selected>вид площади</option>
-                            <option value="offices">Офисы (7)</option>
-                            <option value="conference">конференс-залы (2)</option>
-                            <option value="commercial">Торговые (0)</option>
-                        </select>
-                    </div>
+                </div>
+                <div class="rent__select-wrap">
+                    <select name="plaza" id="plaza" class="rent__select">
+                        <option value="" disabled selected>вид площади</option>
+                        <option value="offices">Офисы (7)</option>
+                        <option value="conference">Kонференс-залы (2)</option>
+                        <option value="commercial">Торговые (0)</option>
+                    </select>
                 </div>
             </div>
-
             <!-- Слайдер с предложениями -->
             <div class="offers-slider">
                 <div class="container offers-slider__container">
@@ -246,8 +250,7 @@
 
 
 
-
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
